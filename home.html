@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/sweetalert2.min.css">
+</head>
+
+<body style="font-family:'BrownStd-regular'" class="site">
+    <div class="example3">
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <a class="navbar-brand float-sm-left d-flex align-items-md-center" href="./index.html"><img clas="navbar-brand" class="d-inline-block align-top " src="./images/logo.png"></a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class=" navbar-nav  ml-auto header-list" id="main">
+                    <li class="nav-item active selected">
+                        <a style="color:#AA3437" class="nav-link" href="./nosotros.html">ABOUT US
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active selected">
+                        <a style="color:#AA3437" data-toggle="modal" data-target="#myModalNorm" class="nav-link" href="./nosotros.html">CONTACT US
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="color:#AA3437" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PRODUCTOS
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-header titulo " style="color: #ffffff">ENVASADORAS AUTOMATICAS</a>
+                            <a class="dropdown-item zelda" href="./producto.html" prop="2">Envasadoras horizontales</a>
+                            <a class="dropdown-item zelda " href="./producto.html" prop="1">Envasadoras verticales</a>
+                            <a class="dropdown-item zelda" href="./producto.html" prop="3">Envasadoras rotativas tipo doypack</a>
+                            <a class="dropdown-item zelda" href="./producto.html" prop="8">Envasadoras rotativas para sachets</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-header " style="color: #ffffff">PESADORAS/DOSIFICADORAS/LLENADORAS</a>
+                            <a class="dropdown-item zelda" href="./producto.html" prop="4">Balanzas multicabezales</a>
+                            <a class="dropdown-item zelda" href="./producto.html" prop="5">Balanzas lineales</a>
+                            <a class="dropdown-item zelda" href="./producto.html" prop="7">Dosificadoras de tornillo</a>
+                            <a class="dropdown-item zelda" href="./producto.html" prop="6">Dosificadoras de tazas volumétricas</a>
+                            <a class="dropdown-item zelda" href="./producto.html" prop="9">Llenadoras de líquido</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-header zelda" style="color: #ffffff">TRANSPORTE DE MATERIAL/COMPLEMENTARIOS/OTROS</a>
+                            <a class="dropdown-item zelda" href="./producto.html" prop="10">Chequeadores de peso</a>
+                            <a class="dropdown-item zelda" href="./producto.html" prop="11">Elevadoras de cangilones tipo Z</a>
+                            <a class="dropdown-item zelda" href="./producto.html" prop="12">Elevadoras de productos tipo S</a>
+                            <a class="dropdown-item zelda" href="./producto.html" prop="13">Alimentadores de tornillo</a>
+                            <a class="dropdown-item zelda" href="./producto.html" prop="14">Etiquetadoras de botella</a>
+                            <a class="dropdown-item zelda" href="./producto.html" prop="15">Túneles de termocontraíble</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="color:#AA3437" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            NOVEDADES
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="./novedades.html">Proyectos</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Galeria de videos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="color:#AA3437" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                            <i class="fa fa-language fa-2x" aria-hidden="true"></i>
+
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="home.html">
+                                INGLÉS
+                            </a>
+                            <a class="dropdown-item" href="index.html">ESPAÑOL</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container site-content">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active ">
+                    <img class="d-block img-responsive" src="http://www.paisajesbonitos.org/wp-content/uploads/2015/11/paisajes-bonitos-de-oto%C3%B1o-lago.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-responsive" src="http://www.paisajesbonitos.org/wp-content/uploads/2015/11/paisajes-bonitos-de-oto%C3%B1o-lago.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-responsive" src="http://www.paisajesbonitos.org/wp-content/uploads/2015/11/paisajes-bonitos-de-oto%C3%B1o-lago.jpg">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="container site-content ">
+            <div class="row  fluid cuerpo">
+                <div class="col-sm-4 col-sd-12 modulo">
+                    <div class="col-md-12">
+                        <h3>NOTICIAS</h3>
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="text-justify ">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
+                            dui.
+                        </p>
+                        <p id="demo" class="text-justify collapse">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
+                            dui.
+                        </p>
+                    </div>
+                    <div class="col-sm-4 "></div>
+                    <div class="col-sm-4 "></div>
+                    <div class="col-sm-4 ">
+                        <a href="#" class="icon-block " data-toggle="collapse" data-target="#demo">
+                            <i class="fa fa-plus" aria-hidden="true">
+                                <span>
+                                    LEER MÁS
+                                </span>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 modulo">
+                    <div class="col-md-12">
+                        <h3>PROYECTOS</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="text-justify  ">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
+                            dui.
+                        </p>
+                    </div>
+                    <div class="col-md-4 "></div>
+                    <div class="col-md-4 "></div>
+                    <div class="col-md-4 ">
+                        <a href="#" class="icon-block">
+                            <i class="fa fa-plus" aria-hidden="true">
+                                <span>LEER MÁS</span>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 modulo">
+                    <div class="col-md-12">
+                        <h3>CATÁLOGO</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#"><img class="img-responsive" style=" max-width: 100% ;height:auto;  " src="./images/CATALOGO-2017.jpg"></a>
+                                <a href="#">DESCARGAR AQUÍ</a>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div style="padding:auto" class="modal-header">
+                            <h5 class="modal-title" id="myModalLabel">
+                                Contáctanos
+                            </h5>
+                            <button id="cerrar" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!-- Modal Body -->
+                        <div style="padding:0.5px" class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="tam-letra">Nombres<span style="color:red">(*)</span></label>
+                                            <input class="form-control" id="firstname" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="tam-letra">Apellidos<span style="color:red">(*)</span></label>
+                                            <input class="form-control" id="lastname" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="tam-letra">Empresa<span style="color:red">(*)</span></label>
+                                            <input class="form-control" id="empresa" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="tam-letra">Cargo<span style="color:red">(*)</span></label>
+                                            <input class="form-control" id="cargo" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="tam-letra">Correo<span style="color:red">(*)</span></label>
+                                            <input class="form-control" id="email" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="tam-letra">Teléfono<span style="color:red">(*)</span></label>
+                                            <input class="form-control" id="phone" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="tam-letra">País<span style="color:red">(*)</span></label>
+                                            <input class="form-control" id="country" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="tam-letra">RUC<span style="color:red">(*)</span></label>
+                                            <input class="form-control" id="ruc" />
+                                        </div>
+                                        <div class="checkbox">
+                                            <label class="tam-letra">
+                                                <input type="checkbox"/>
+                                                Acepto las Políticas de Privacidad
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="tam-letra">Mensaje</label>
+                                            <textarea rows="6" class="form-control"></textarea>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <a type="button" id="enviar" class="btn btn-default but" href="javascript:void(0)">ENVIAR</a>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <a type="button" class="btn btn-default but" href="javascript:void(0)">BORRAR</a>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-sm-12 info">
+                                                <p>INFORMACIÓN DE CONTACTO</p>
+                                                <p>EMAIL INFO@CRENTERIA.COM</p>
+                                                <p>OFICINA CALLE 2 DE MAYO</p>
+                                                <p>BALNEARIO DE ANCÓN</p>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fin modal-->
+    </div>
+    <div style="line-height: 1.1" class="row footer">
+        <div class="col-md-4 paddingtop-bottom footerS1 ">
+            <ul class="footer-ul  ">
+                <li class="footerS1nosypro1">
+                    <a href=./nosotros.html ">NOSOTROS</a>
+          </li>
+          <li class="footerS1nosypro1 ">
+            <a href=./producto.html ">PRODUCTOS</a>
+                </li>
+                <ul>
+                    <p class="h6 tituloss1" style="font-size:0.9em;">ENVASADORAS AUTOMÁTICAS</p>
+                    <li>
+                        <a href=" ./producto.html " class="zelda" prop=2>ENVASADORAS HORIZONTALES</a>
+                    </li>
+                    <li>
+                        <a href="./producto.html" class="zelda" prop="1">ENVASADORAS VERTICALES</a>
+                    </li>
+                    <li>
+                        <a href="#./producto.html" class="zelda" prop="3">ENVASADORAS ROTATIVAS TIPO DOYPACK</a>
+                    </li>
+                    <li>
+                        <a href="#./producto.html" class="zelda" prop="8">ENVASADORAS ROTATIVA PARA SACHETS
+          </a>
+                    </li>
+                </ul>
+                <ul>
+                    <p class="h6 tituloss1" style="font-size:0.9em ">
+                        PESADORAS DOSIFICADORAS LLENADORAS</p>
+                    <li>
+                        <a href="./producto.html " class="zelda" prop="4">BALANZAS MULTICABEZALES</a>
+                    </li>
+                    <li>
+                        <a href="./producto.html " class="zelda" prop="5">BALANZAS LINEALES</a>
+                    </li>
+                    <li>
+                        <a href="#./producto.html" class="zelda" prop="7">DOSIFICADORAS DE TORNILLO</a>
+                    </li>
+                    <li>
+                        <a href="#./producto.html" class="zelda" prop="6">DOSIFICADORAS DE TAZAS VOLUMETRICAS</a>
+                    </li>
+                    <li>
+                        <a href="#./producto.html" class="zelda" prop="9">LLENADORAS DE LIQUIDO</a>
+                    </li>
+                    <li>
+                        <a href="#./producto.html" class="zelda" prop="10">ENVASADORAS VERTICAL PARA SACHET
+          </a>
+                    </li>
+                </ul>
+                <ul>
+                    <p class="h6 tituloss1" style="font-size:0.9em; ">
+                        TRANSPORTE DE MATERIAL COMPLEMENTARIOS OTROS</p>
+                    <li>
+                        <a href="./producto.html " class="zelda">CHEQUEADORES DE PESO</a>
+                    </li>
+                    <li>
+                        <a href="./producto.html " class="zelda">ELEVADORES DE COGILONES TIPO Z</a>
+                    </li>
+                    <li>
+                        <a href="./producto.html" class="zelda">ELEVADORAS DE PRODUCTOS TIPO S</a>
+                    </li>
+                    <li>
+                        <a href="./producto.html" class="zelda">ALIMENTADORES DE TORNILLOS</a>
+                    </li>
+                    <li>
+                        <a href="./producto.html" class="zelda">ETIQUETADORAS DE BOTELLA</a>
+                    </li>
+                    <li>
+                        <a href="./producto.html" prop="15" class="zelda">TUNELES DE TERMOCONTRAIBLE</a>
+                    </li>
+                </ul>
+        </div>
+        <div class="col-md-4 footerS2 ">
+            <ul class="footer-ul">
+
+                <ul class="footer-ul-content">
+                    <a>NOVEDADES</a>
+                    <li>
+                        <a href="# ">PROYECTOS</a>
+                    </li>
+                    <li>
+                        <a href="# ">GALERIA DE VIDEOS</a>
+                    </li>
+                </ul>
+            </ul>
+
+            <div class="row ">
+                <div class="col-md-12">
+                    <h6 style="text-align:right; color: #AA3437; font-size: 0.9em;">SÍGUENOS EN</h6>
+                </div>
+
+                <div class="col-md-12 col-md-offset-5">
+                    <a target="_blank" href="#" class="btn pull-right btn-neutral btn-icon btn-twitter" rel="tooltip" title="Follow us">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </a>
+
+                    <a target="_blank" href="#" class="btn  pull-right  btn-neutral btn-icon btn-facebook" rel="tooltip" title="Like us">
+                        <i class="fa fa-facebook-square fa-2x "></i>
+                    </a>
+                    <a target="_blank" href="#" class="btn  pull-right btn-neutral btn-icon btn-linkedin" rel="tooltip" title="Follow us">
+                        <i class="fa fa-linkedin fa-2x "></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/user/crenteriamachinery" class="btn  pull-right btn-neutral btn-icon btn-youtube" rel="tooltip" title="Suscribete">
+                        <i class="fa fa-youtube fa-2x "></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js " integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js " integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js " integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn " crossorigin="anonymous "></script>
+    <script src="./js/carouse.js "></script>
+    <script type="text/javascript" src="./js/sweetalert2.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/valida.js"></script>
+    <script src="./js/producto.js"></script>
+</body>
+
+</html>

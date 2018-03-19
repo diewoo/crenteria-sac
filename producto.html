@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/producto.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/sweetalert2.min.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107285297-1"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-107285297-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</head>
+
+<body style="font-family:'BrownStd-regular'" class="site">
+    <div class="example3">
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <a class="navbar-brand float-sm-left d-flex align-items-md-center" href="./index.html"><img class="navbar-brand d-inline-block align-top " src="./images/logo.png"></a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav  ml-auto header-list" id="main">
+                    <li class="nav-item active selected">
+                        <a style="color:#AA3437" class="nav-link" href="./index.html">NOSOTROS
+                <span class="sr-only">(current)</span>
+              </a>
+                    </li>
+                    <li class="nav-item active selected">
+                        <a style="color:#AA3437" data-toggle="modal" data-target="#myModalNorm" class="nav-link" href="./nosotros.html">CONTÁCTANOS
+                <span class="sr-only">(current)</span>
+              </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="color:#AA3437" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PRODUCTOS
+              </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-header titulo " style="color: #ffffff" href="#">ENVASADORAS AUTOMATICAS</a>
+                            <a class="dropdown-item zelda" href="#" prop=2>Envasadoras horizontales</a>
+                            <a class="dropdown-item zelda" href="#" prop="1">Envasadoras verticales</a>
+                            <a class="dropdown-item zelda" href="#" prop="3">Envasadoras rotativas tipo doypack</a>
+                            <a class="dropdown-item zelda" href="#" prop="8">Envasadoras rotativas para sachets</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-header " style="color: #ffffff">PESADORAS/DOSIFICADORAS</a>
+                            <a class="dropdown-header " style="color: #ffffff">LLENADORAS</a>
+                            <a class="dropdown-item zelda" href="#" prop="4">Balanzas multicabezales</a>
+                            <a class="dropdown-item zelda" href="#" prop="5">Balanzas lineales
+                </a>
+                            <a class="dropdown-item zelda" href="#" prop="7">Dospropificadoras de tornillo</a>
+                            <a class="dropdown-item zelda" href="#" prop="6">Dosificadoras de tazas volumétricas</a>
+                            <a class="dropdown-item zelda" href="#" prop="9">Llenadoras de líquido</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-header" style="color: #ffffff">TRANSPORTE DE MATERIAL</a>
+                            <a class="dropdown-header" style="color: #ffffff">COMPLEMENTARIOS</a>
+                            <a class="dropdown-item zelda" href="#" prop="10">Chequeadores de peso</a>
+                            <a class="dropdown-item zelda" href="#" prop="11">Elevadoras de cangilones tipo Z
+                </a>
+                            <a class="dropdown-item zelda" href="#" prop="12">Elevadoras de productos tipo S</a>
+                            <a class="dropdown-item zelda" href="#" prop="13">Alimentadores de tornillo</a>
+                            <a class="dropdown-item zelda" href="#" prop="14">Etiquetadoras de botella</a>
+                            <a class="dropdown-item zelda" href="#" prop="15">Túneles de termocontraíble</a>
+
+                        </div>
+
+                    </li>
+                    <!--    <li class="nav-item dropdown">
+                        <a style="color:#AA3437" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                            
+                            IDIOMA
+
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="home.html">
+                                INGLÉS
+                            </a>
+                            <a class="dropdown-item" href="index.html">ESPAÑOL</a>
+                        </div>
+                    </li>
+                -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container site-content">
+        <div class="row ">
+            <div class="col-md-3">
+                <div class="card card-banner " style="margin-top: 10px;">
+                    <h2 class="card-title" style="text-align: center;background-color: brown;color:#ffffff;">PRODUCTOS</h4>
+                        <ul class="list-group  lista-banner" style="height: 100%;">
+                            <li class="list-group-item lista-banner-titulo">ENVASADORAS AUTOMÁTICAS</li>
+                            <div class="list-group banner lista-items-grupo">
+
+                                <a class=" list-group-item list-group-item-action zelda" href="#" prop=2>ENVASADORAS HORIZONTALES</a>
+
+
+                                <a class=" list-group-item list-group-item-action zelda" href="#" prop=1>ENVASADORAS VERTICALES</a>
+
+                                <a class=" list-group-item list-group-item-action zelda" href="#" prop="3">ENVASADORAS ROTATIVAS TIPO DOYPACK</a>
+
+
+                                <a class=" list-group-item list-group-item-action zelda" href="#" prop="8">ENVASADORA ROTATIVA PARA SACHETS</a>
+
+                            </div>
+                            <li class="list-group-item lista-banner-titulo">PESADORAS/DOSIFICADORAS/LLENADORAS</li>
+                            <ul class="list-group  banner lista-items-grupo">
+
+                                <a class=" list-group-item list-group-item-action zelda" href="#" prop="4">BALANZAS MULTICABEZALES</a>
+
+
+                                <a class=" list-group-item list-group-item-action zelda" href="#" prop="5">BALANZAS LINEALES</a>
+
+
+                                <a class="list-group-item list-group-item-action zelda" href="#" prop="7">DOSIFICADORAS DE TORNILLO</a>
+
+                                <a class=" list-group-item list-group-item-action zelda" href="#" prop="6">DOSIFICADORAS DE TAZAS VOLUMETRICAS</a>
+
+
+                                <a class=" list-group-item list-group-item-action zelda" href="#" prop="9">LLENADORAS DE LIQUIDO</a>
+
+                            </ul>
+                            <li class="list-group-item lista-banner-titulo">TRANSPORTE DE MATERIAL/COMPLEMENTARIOS</li>
+                            <ul class="list-group  banner lista-items-grupo">
+
+                                <a class=" list-group-item list-group-item-action zelda" href="#" prop="10">CHEQUEADORES DE PESO</a>
+
+
+                                <a class=" list-group-item list-group-item-action zelda" href="#" prop="11">ELEVADORES DE CANGILONES TIPO Z</a>
+
+
+                                <a class=" list-group-item list-group-item-action zelda" href="#" prop="12">ELEVADORES DE PRODUCTOS TIPO S</a>
+
+                                <a class="list-group-item list-group-item-action zelda" href="#" prop="13">ALIMENTADORES DE TORNILLO</a>
+
+                                <a class=" list-group-item list-group-item-action zelda" href="#" prop="14">ETIQUETADORAS DE BOTELLAS</a>
+
+
+                                <a class="list-group-item list-group-item-action zelda" href="#" prop="15">TUNELES DE TERMOCONTRAIBLE</a>
+
+                            </ul>
+                        </ul>
+
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-7" id="producto">
+                <div class="progress loader" id="cargador">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+
+            </div>
+
+            <div class="col-md-1"></div>
+
+        </div>
+        <div style="padding:1%;background-color:#E7E8E8" class="row">
+
+            <div id="link1" class="col-md-4"></div>
+            <div id="link2" class="col-md-4"></div>
+            <div id="link3" class="col-md-4"></div>
+            <div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div style="padding:auto" class="modal-header">
+                            <h5 class="modal-title" id="myModalLabel">
+                                Contáctanos
+                            </h5>
+                            <button id="cerrar" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                        <!-- Modal Body -->
+                        <div style="padding:0.5px" class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="tam-letra">Nombres<span style="color:red">(*)</span></label>
+                                            <input class="form-control" id="firstname" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="tam-letra">Apellidos<span style="color:red">(*)</span></label>
+                                            <input class="form-control" id="lastname" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="tam-letra">Empresa<span style="color:red">(*)</span></label>
+                                            <input class="form-control" id="empresa" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="tam-letra">Cargo<span style="color:red">(*)</span></label>
+                                            <input class="form-control" id="cargo" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="tam-letra">Correo<span style="color:red">(*)</span></label>
+                                            <input type="email" class="form-control" id="email" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="tam-letra">Teléfono<span style="color:red">(*)</span></label>
+                                            <input type="tel" class="form-control" id="phone" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="tam-letra">País<span style="color:red">(*)</span></label>
+                                            <input class="form-control" id="country" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="tam-letra">RUC<span style="color:red">(*)</span></label>
+                                            <input type="tel" class="form-control" id="ruc" />
+                                        </div>
+                                        <div class="checkbox">
+                                            <label class="tam-letra">
+                                                    <input type="checkbox" id="checkbox"/>
+                                                    Acepto las Políticas de Privacidad
+                                                </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="tam-letra">Mensaje</label>
+                                            <textarea rows="6" class="form-control"></textarea>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <a type="button" id="enviar" class="btn btn-default but" href="javascript:void(0)">ENVIAR</a>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <a type="button" id="borrar"  class="btn btn-default but" href="javascript:void(0)">BORRAR</a>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-sm-12 info">
+                                                <p>INFORMACIÓN DE CONTACTO</p>
+                                                <p>EMAIL INFO@CRENTERIA.COM</p>
+                                                <p>OFICINA CALLE 2 DE MAYO</p>
+                                                <p>BALNEARIO DE ANCÓN</p>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-12" id="map">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="line-height: 1.1" class="row footer">
+            <div class="col-md-4 paddingtop-bottom footerS1 ">
+                <ul class="footer-ul  ">
+                    <li class="footerS1nosypro1">
+                        <a href="# ">NOSOTROS</a>
+                    </li>
+                    <li class="footerS1nosypro1">
+                        <a href="# ">PRODUCTOS</a>
+                    </li>
+                    <ul>
+                        <p class="h6 tituloss1" style="font-size:0.9em;">ENVASADORAS AUTOMÁTICAS</p>
+                        <li>
+                            <a href=" # " class="zelda" prop=2>ENVASADORAS HORIZONTALES</a>
+                        </li>
+                        <li>
+                            <a href="#" class="zelda" prop="1">ENVASADORAS VERTICALES</a>
+                        </li>
+                        <li>
+                            <a href="# " class="zelda" prop="3">ENVASADORAS ROTATIVAS TIPO DOYPACK</a>
+                        </li>
+                        <li>
+                            <a href="# " class="zelda" prop="8">ENVASADORAS ROTATIVA PARA SACHETS
+          </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <p class="h6 tituloss1" style="font-size:0.9em ">
+                            PESADORAS DOSIFICADORAS LLENADORAS</p>
+                        <li>
+                            <a href="# " class="zelda" prop="4">BALANZAS MULTICABEZALES</a>
+                        </li>
+                        <li>
+                            <a href="# " class="zelda" prop="5">BALANZAS LINEALES</a>
+                        </li>
+                        <li>
+                            <a href="# " class="zelda" prop="7">DOSIFICADORAS DE TORNILLO</a>
+                        </li>
+                        <li>
+                            <a href="# " class="zelda" prop="6">DOSIFICADORAS DE TAZAS VOLUMETRICAS</a>
+                        </li>
+                        <li>
+                            <a href="# " class="zelda" prop="9">LLENADORAS DE LIQUIDO</a>
+                        </li>
+                        <li>
+                            <a href="# " class="zelda" prop="10">ENVASADORAS VERTICAL PARA SACHET
+          </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <p class="h6 tituloss1" style="font-size:0.9em; ">
+                            TRANSPORTE DE MATERIAL COMPLEMENTARIOS OTROS</p>
+                        <li>
+                            <a href="# " class="zelda" prop="11">CHEQUEADORES DE PESO</a>
+                        </li>
+                        <li>
+                            <a href="# " class="zelda" prop="11">ELEVADORES DE COGILONES TIPO Z
+          </a>
+                        </li>
+                        <li>
+                            <a href="#" class="zelda" prop="12">ELEVADORAS DE PRODUCTOS TIPO S</a>
+                        </li>
+                        <li>
+                            <a href="#" class="zelda" prop="13">ALIMENTADORES DE TORNILLOS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="zelda" prop="14">ETIQUETADORAS DE BOTELLA</a>
+                        </li>
+                        <li>
+                            <a href="#" class="zelda" prop="15">TUNELES DE TERMOCONTRAIBLE
+          </a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="col-md-4 footerS2 ">
+
+                <div class="row ">
+                    <div class="col-md-12">
+                        <h6 style="text-align:right; color: #AA3437; font-size: 0.9em;">SÍGUENOS EN</h6>
+                    </div>
+
+                    <div class="col-md-12 col-md-offset-5">
+                        <a target="_blank" href="#" class="btn pull-right btn-neutral btn-icon btn-twitter" rel="tooltip" title="Follow us">
+                            <i class="fa fa-twitter fa-2x"></i>
+                        </a>
+
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100017260008041&ref=br_rs" class="btn  pull-right  btn-neutral btn-icon btn-facebook" rel="tooltip" title="Like us">
+                            <i class="fa fa-facebook-square fa-2x "></i>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/roberto-renteria-b09189b2/" class="btn  pull-right btn-neutral btn-icon btn-linkedin" rel="tooltip" title="Follow us">
+                            <i class="fa fa-linkedin fa-2x "></i>
+                        </a>
+                        <a target="_blank" href="https://www.youtube.com/user/crenteriamachinery" class="btn  pull-right btn-neutral btn-icon btn-youtube" rel="tooltip" title="Suscribete">
+                            <i class="fa fa-youtube fa-2x "></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js " integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js " integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js " integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn " crossorigin="anonymous "></script>
+    <script src="./js/carouse.js "></script>
+    <script type="text/javascript" src="./js/sweetalert2.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/valida.js"></script>
+    <script src="./js/producto.js"></script>
+    <script>
+        function initMap() {
+            var uluru = {
+                lat: -11.7579613,
+                lng: -77.1519003
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7f-oD0-MZ5a6S3WToIgkSfvA69Z2GCDM&callback=initMap">
+    </script>
+</body>
+
+</html>
