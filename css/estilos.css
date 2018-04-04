@@ -392,7 +392,8 @@ footer>div>div>ul>li {
 }
 
 .tam-letra {
-    font-size: 1.0em
+    font-size: 1.0em;
+    font-family: 'Source Sans Pro'
 }
 
 

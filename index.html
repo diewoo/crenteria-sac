@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./css/nosotros.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./css/sweetalert2.min.css">
-      <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="./images/apple-icon-76x76.png">
@@ -26,17 +26,25 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107285297-1"></script>
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107285297-1"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-ga('create', 'UA-107285297-1', 'auto');
-ga('send', 'pageview');
-</script>
+        ga('create', 'UA-107285297-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
 </head>
 
@@ -49,17 +57,12 @@ ga('send', 'pageview');
             <a class="navbar-brand float-sm-left d-flex align-items-md-center" href="./index.html"><img class="navbar-brand d-inline-block align-top " src="./images/logo.png"></a>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav  ml-auto header-list" id="main">
-                    <li class="nav-item active " >
+                    <li class="nav-item active ">
                         <a style="color:#AA3437" class="nav-link " href="./index.html">NOSOTROS
 								<span class="sr-only">(current)</span>
 						</a>
                     </li>
-                    <li class="nav-item active selected"  >
-                        <a style="color:#AA3437" data-toggle="modal" data-target="#myModalNorm" class="nav-link" href="./nosotros.html">CONTÁCTANOS
-								<span class="sr-only">(current)</span>
-						</a>
-                    </li>
-                    <li class="nav-item dropdown" >
+                    <li class="nav-item dropdown">
                         <a style="color:#AA3437" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								PRODUCTOS
 						</a>
@@ -70,16 +73,15 @@ ga('send', 'pageview');
                             <a class="dropdown-item zelda" href="./producto.html" prop="3">Envasadoras rotativas tipo doypack</a>
                             <a class="dropdown-item zelda" href="./producto.html" prop="8">Envasadoras vertical para sachets</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-header " style="color: #ffffff">PESADORAS/DOSIFICADORAS</a>
-                            <a class="dropdown-header " style="color: #ffffff">LLENADORAS</a>
+                            <a class="dropdown-header " style="color: #ffffff">PESADORAS/DOSIFICADORAS/LLENADORAS</a>
                             <a class="dropdown-item zelda" href="./producto.html" prop="4">Balanzas multicabezales</a>
                             <a class="dropdown-item zelda" href="./producto.html" prop="5">Balanzas lineales</a>
                             <a class="dropdown-item zelda" href="./producto.html" prop="7">Dosificadoras de tornillo</a>
                             <a class="dropdown-item zelda" href="./producto.html" prop="6">Dosificadoras de tazas volumétricas</a>
                             <a class="dropdown-item zelda" href="./producto.html" prop="9">Llenadoras de líquido</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-header" style="color: #ffffff">TRANSPORTE DE MATERIAL</a>
-                            <a class="dropdown-header" style="color: #ffffff">COMPLEMENTARIOS</a>
+                            <a class="dropdown-header" style="color: #ffffff">TRANSPORTE DE MATERIAL/COMPLEMENTARIOS</a>
+
                             <a class="dropdown-item zelda" href="./producto.html" prop="10">Chequeadores de peso</a>
                             <a class="dropdown-item zelda" href="./producto.html" prop="11">Elevadoras de cangilones tipo Z</a>
                             <a class="dropdown-item zelda" href="./producto.html" prop="12">Elevadoras de productos tipo S</a>
@@ -90,6 +92,12 @@ ga('send', 'pageview');
                         </div>
 
                     </li>
+                    <li class="nav-item active selected">
+                        <a style="color:#AA3437" data-toggle="modal" data-target="#myModalNorm" class="nav-link" href="./nosotros.html">CONTÁCTANOS
+								<span class="sr-only">(current)</span>
+						</a>
+                    </li>
+
                     <!--
                     <li class="nav-item dropdown">
                         <a style="color:#AA3437" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
@@ -114,7 +122,7 @@ ga('send', 'pageview');
     <div class="container site-content " style="margin-top: 2%">
         <div class="row" style="padding-bottom: 7%">
             <div class="col-md-4 col-sd-12 modulo sinborde">
-                <div class="col-md-12">
+                <div class="col-md-12 titulos">
                     <h3>SOBRE NOSOTROS</h3>
                 </div>
                 <div class="col-md-12" style="padding-top: 15px">
@@ -137,12 +145,12 @@ ga('send', 'pageview');
 
                             <!-- Modal -->
                             <div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
+                                <div class="modal-dialog modal-lg" role="document">
                                     <div class="modal-content">
                                         <!-- Modal Header -->
-                                        <div style="padding:auto" class="modal-header">
-                                            <h5 class="modal-title" id="myModalLabel">
-                                                Contáctanos
+                                        <div class="modal-header">
+                                            <h5 class="modal-title contactano titulos" id="myModalLabel">
+                                                CONTÁCTANOS
                                             </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">&times;</span>
@@ -152,64 +160,94 @@ ga('send', 'pageview');
                                         </div>
 
                                         <!-- Modal Body -->
-                                        <div style="padding:0.5px" class="modal-body">
+                                        <div class="modal-body">
                                             <div class="container-fluid">
                                                 <form class="" action="#" method="post">
                                                     <div class="row">
 
                                                         <div class="col-sm-6">
-                                                            <div class="form-group">
-                                                                <label class="tam-letra">Nombres<span style="color:red">(*)</span>
-																	</label>
-                                                                <input class="form-control" id="firstname" />
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label tam-letra">Apellidos
+                                                                    </label>
+                                                                <div class="col-sm-9">
+                                                                    <input class="form-control" id="lastname" />
+                                                                </div>
+
                                                             </div>
-                                                            <div class="form-group">
-                                                                <label class="tam-letra">Apellidos<span style="color:red">(*)</span>
-																	</label>
-                                                                <input class="form-control" id="lastname" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="tam-letra">Empresa<span style="color:red">(*)</span></label>
-                                                                <input class="form-control" id="empresa" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="tam-letra">Cargo<span style="color:red">(*)</span>
-																	</label>
-                                                                <input class="form-control" id="cargo" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="tam-letra">Correo<span style="color:red">(*)</span>
-																	</label>
-                                                                <input type="email" required="true" class="form-control" id="email" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="tam-letra">Teléfono<span style="color:red">(*)</span>
-																	</label>
-                                                                <input type="tel" class="form-control" id="phone" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="tam-letra">País<span style="color:red">(*)</span>
-																	</label>
-                                                                <input class="form-control" id="country" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="tam-letra">RUC<span style="color:red">(*)</span>
-																	</label>
-                                                                <input type="tel" maxlength="11" class="form-control" id="ruc" />
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label tam-letra">Nombres
+                                                                    </label>
+                                                                <div class="col-sm-9">
+                                                                    <input class="form-control" id="firstname" />
+                                                                </div>
+
                                                             </div>
 
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label tam-letra">Empresa</label>
+                                                                <div class="col-sm-9">
+                                                                    <input class="form-control" id="empresa" />
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label tam-letra">Cargo
+                                                                    </label>
+                                                                <div class="col-sm-9">
+                                                                    <input class="form-control" id="cargo" />
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label tam-letra">Correo
+                                                                    </label>
+                                                                <div class="col-sm-9">
+                                                                    <input type="email" required="true" class="form-control" id="email" />
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label tam-letra">Teléfono
+                                                                    </label>
+                                                                <div class="col-sm-9">
+                                                                    <input type="tel" class="form-control" id="phone" />
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label tam-letra">País
+                                                                    </label>
+                                                                <div class="col-sm-9">
+                                                                    <input class="form-control" id="country" />
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label tam-letra">RUC
+                                                                    </label>
+                                                                <div class="col-sm-9">
+                                                                    <input type="tel" maxlength="11" class="form-control" id="ruc" />
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label tam-letra">Mensaje</label>
+                                                                <div class="col-sm-9">
+                                                                    <textarea rows="8" class="form-control" id="mensaje"></textarea>
+                                                                </div>
+
+                                                            </div>
                                                             <div class="checkbox">
                                                                 <label class="tam-letra">
 																		<input type="checkbox" id="checkbox"/>
 																		Acepto las Políticas de Privacidad
 																	</label>
-                                                            </div>
-
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group">
-                                                                <label class="tam-letra">Mensaje</label>
-                                                                <textarea rows="6" class="form-control" id="mensaje"></textarea>
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-sm-6">
@@ -232,7 +270,7 @@ ga('send', 'pageview');
                                                                 </div>
 
                                                             </div>
-                                            
+
                                                             <div class="col-md-12" id="map">
 
                                                             </div>
@@ -265,7 +303,7 @@ ga('send', 'pageview');
                 </div>
             </div>
             <div class="col-md-4 modulo sinborde" style="padding-bottom: 20px">
-                <div class="col-md-12">
+                <div class="col-md-12  titulos">
                     <h3>VISIÓN</h3>
                 </div>
                 <div class="col-md-12">
@@ -277,7 +315,7 @@ ga('send', 'pageview');
                     </div>
 
                 </div>
-                <div class="col-md-12" style="padding-top: 20px">
+                <div class="col-md-12 titulos" style="padding-top: 20px">
                     <h3>MISIÓN</h3>
                 </div>
                 <div class="col-md-12">

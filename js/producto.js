@@ -3,7 +3,7 @@
 
 $(document).ready(function() {
 
-        valorid = 1;	
+    valorid = 1;
     valorid = sessionStorage.getItem('id');
     if (valorid !== undefined) {
         if (valorid === null) {
@@ -168,7 +168,7 @@ function obtenerProducto(id) {
                     output = `
               <div class="row">
               <div class="col-md-12">
-              <h1 style="color:brown;font-family:BrownStd-Bold">${titulo}</h1>
+              <h1 style="color:brown;font-family:SOURCE SANS PRO ">${titulo}</h1>
               </div>
               <div class="col-md-5"><img  src="${producto.data.detalle.foto}"  id="ex1" class="img-fluid zoom" alt="Responsive image"/></div>
               <div class="col-md-7">
