@@ -149,10 +149,12 @@ ul {
 p {
     font-size: 0.7em;
     color: #5a5a5a;
+    font-family: 'SOURCE SANS PRO'
 }
 
 .cabecera {
     background-color: #e0e1e1;
+    
 }
 
 .navbar-toggler {
@@ -186,10 +188,12 @@ a {
     text-align: right;
     color: #AA3437;
     font-size: 0.9em;
+    font-family: 'SOURCE SANS PRO'
 }
 
 .footer>div>div>ul>li {
     text-align: center;
+    font-family: 'SOURCE SANS PRO'
 }
 
 .tituloss1 {

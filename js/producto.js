@@ -172,13 +172,13 @@ function obtenerProducto(id) {
               </div>
               <div class="col-md-5"><img  src="${producto.data.detalle.foto}"  id="ex1" class="img-fluid zoom" alt="Responsive image"/></div>
               <div class="col-md-7">
-                <p style="font-size:1.1em;text-align:justify;font-family:BrownStd-Bold"> 
+                <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO PRO"> 
                 ${replaced}</p></div>
               </div>
               </div>
               <div class="row">
               <div class="col-md-12 table table-responsive " style="font-family:BrownStd-Bold">
-              <table style="font-size:0.70em;font-family:BrownStd-Bold" class="table  table-sm ">
+              <table style="font-size:0.70em;font-family:SOURCE SANS PRO LIGHT" class="table  table-sm ">
               <thead>
                 <tr>
                   <th style="background-color: brown;color:#ffffff;">MODELO</th>

@@ -180,6 +180,7 @@ a {
     text-align: right;
     color: #AA3437;
     font-size: 0.9em;
+    font-family: 'SOURCE SANS PRO'
 }
 
 .footer-ul-content,
@@ -225,6 +226,7 @@ p {
 
 .footwr {
     background-color: #c2c3c3;
+    font-family: 'SOURCE SANS PRO'
 }
 
 .example3 .navbar-toggle {
@@ -266,7 +268,8 @@ ul {
 
 .tituloss1 {
     color: #ffffff;
-    text-align: right
+    text-align: right;
+    font-family: 'SOURCE SANS PRO'
 }
 
 .nav>a.dropdown.open {
