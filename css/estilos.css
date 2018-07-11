@@ -395,7 +395,10 @@ footer>div>div>ul>li {
     font-size: 1.0em;
     font-family: 'Source Sans Pro'
 }
-
+.tam-letras-modal>p {
+    font-size: 1.0em;
+    font-family: 'Source Sans Pro'
+}
 
 /*modal*/
 

@@ -126,7 +126,7 @@ ul {
 .dropdown-item {
     padding: 1px 1.5rem;
     font-size: 1.0rem;
-    margin: 0 auto;
+    margin: 0 auto;	
 }
 
 .nav>a.dropdown.open {
@@ -147,10 +147,21 @@ ul {
 
 .footer-ul>ul>li>a,
 p {
-    font-size: 0.7em;
-    color: #5a5a5a;
-    font-family: 'SOURCE SANS PRO'
+	color: #5a5a5a;
+    font-size: 0.70em;
+    
+    font-family: 'SOURCE SANS PRO';
+	
 }
+.info>
+p {
+	color: #5a5a5a;
+    font-size: 0.82em;
+    text-align:center;
+    font-family: 'SOURCE SANS PRO LIGHT';
+	font-weight:bold;
+}
+
 
 .cabecera {
     background-color: #e0e1e1;

@@ -172,12 +172,12 @@ function obtenerProducto(id) {
               </div>
               <div class="col-md-5"><img  src="${producto.data.detalle.foto}"  id="ex1" class="img-fluid zoom" alt="Responsive image"/></div>
               <div class="col-md-7">
-                <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO PRO"> 
+                <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO"> 
                 ${replaced}</p></div>
               </div>
               </div>
               <div class="row">
-              <div class="col-md-12 table table-responsive " style="font-family:BrownStd-Bold">
+              <div class="col-md-12 table table-responsive " style="font-family:SOURCE SANS PRO">
               <table style="font-size:0.70em;font-family:SOURCE SANS PRO LIGHT" class="table  table-sm ">
               <thead>
                 <tr>
@@ -275,11 +275,11 @@ function obtenerProducto(id) {
                     output = `
                 <div class="row">
                 <div class="col-md-12">
-                <h1 style="color:brown;font-family:BrownStd-Bold">${titulo}</h1>
+                <h1 style="color:brown;font-family:SOURCE SANS PRO ">${titulo}</h1>
                 </div>
                 <div class="col-md-5"><img  src="${producto.data.detalle.foto}" class="img-fluid" alt="Responsive image"/></div>
                 <div class="col-md-7">
-                  <p style="font-size:1.1em;text-align:justify;font-family:BrownStd-Bold">
+                  <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO LIGHT">
                   ${replaced}</p></div>
                 </div>
                 </div>
@@ -356,11 +356,11 @@ function obtenerProducto(id) {
                     output = `
               <div class="row">
               <div class="col-md-12">
-              <h1 style="color:brown;">${titulo}</h1>
+              <h1 style="color:brown;font-family:SOURCE SANS PRO">${titulo}</h1>
               </div>
               <div class="col-md-5"><img  src="${producto.data.detalle.foto}" class="img-fluid" alt="Responsive image"/></div>
               <div class="col-md-7">
-                <p style="font-size:1.1em;text-align:justify;font-family:BrownStd-Bold">
+                <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO LIGHT">
                 ${replaced}</p></div>
               </div>
               </div>
@@ -432,6 +432,7 @@ function obtenerProducto(id) {
         `;
                     url1 = producto.data.detalle.enlace1;
                     url2 = producto.data.detalle.enlace2;
+                    url3 = producto.data.detalle.enlace3;
                     link1 = `
             <div class="embed-responsive embed-responsive-16by9">
               <iframe  class="embed-responsive-item"
@@ -446,17 +447,23 @@ src="${url2}"
 frameborder="0" allowfullscreen></iframe>
 </div>
 `;
-
+link3 = `
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item"
+src="${url3}"
+frameborder="0" allowfullscreen></iframe>
+</div>
+`;
                     break;
                 case 4:
                     output = `
                   <div class="row">
                   <div class="col-md-12">
-                  <h1 style="color:brown;font-family:BrownStd-Bold">${titulo}</h1>
+                  <h1 style="color:brown;font-family:SOURCE SANS PRO">${titulo}</h1>
                   </div>
                   <div class="col-md-5"><img  src="${producto.data.detalle.foto}" class="img-fluid" alt="Responsive image"/></div>
                   <div class="col-md-7">
-                    <p style="font-size:1.1em;text-align:justify;font-family:BrownStd-Bold">
+                    <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO LIGHT">
                     ${replaced}</p></div>
                   </div>
                   </div>
@@ -546,11 +553,11 @@ frameborder="0" allowfullscreen></iframe>
                     output = `
                     <div class="row">
                     <div class="col-md-12">
-                    <h1 style="color:brown;font-family:BrownStd-Bold">${titulo}</h1>
+                    <h1 style="color:brown;font-family:SOURCE SANS PRO">${titulo}</h1>
                     </div>
                     <div class="col-md-5"><img  src="${producto.data.detalle.foto}" class="img-fluid" alt="Responsive image"/></div>
                     <div class="col-md-7">
-                      <p style="font-size:1.1em;text-align:justify;font-family:BrownStd-Bold">
+                      <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO LIGHT">
                       ${replaced}</p></div>
                     </div>
                     </div>
@@ -623,11 +630,11 @@ frameborder="0" allowfullscreen></iframe>
                     output = `
                         <div class="row">
                         <div class="col-md-12">
-                        <h2 style="color:brown;font-family:BrownStd-Bold">${titulo}</h2>
+                        <h2 style="color:brown;font-family:SOURCE SANS PRO">${titulo}</h2>
                         </div>
                         <div class="col-md-5"><img  src="${producto.data.detalle.foto}" class="img-fluid" alt="Responsive image"/></div>
                         <div class="col-md-7">
-                          <p style="font-size:1.1em;text-align:justify;font-family:BrownStd-Bold">
+                          <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO">
                           ${replaced}</p></div>
                         </div>
                         </div>
@@ -678,11 +685,11 @@ frameborder="0" allowfullscreen></iframe>
                     output = `
                       <div class="row">
                       <div class="col-md-12">
-                      <h1 style="color:brown;font-family:BrownStd-Bold">${titulo}</h1>
+                      <h1 style="color:brown;font-family:SOURCE SANS PRO">${titulo}</h1>
                       </div>
                       <div class="col-md-5 col-sm-5 pull-left"><img  src="${producto.data.detalle.foto}" class="img-fluid" alt="Responsive image"/></div>
                       <div class="col-md-7">
-                        <blockquote  class="blockquote" style="font-size:1.1em;text-align:justify;font-family:BrownStd-Bold">
+                        <blockquote  class="blockquote" style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO LIGHT">
                         ${replaced}</blockquote></div>
                       </div>
                       </div>
@@ -768,11 +775,11 @@ frameborder="0" allowfullscreen></iframe>
                     output = `
                 <div class="row">
                 <div class="col-md-12">
-                <h1 style="color:brown;">${titulo}</h1>
+                <h1 style="color:brown;font-family:SOURCE SANS PR">${titulo}</h1>
                 </div>
                 <div class="col-md-5"><img  src="${producto.data.detalle.foto}" class="img-fluid" alt="Responsive image"/></div>
                 <div class="col-md-7">
-                  <p style="font-size:1.1em;text-align:justify;font-family:BrownStd-Bold">
+                  <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO LIGHT">
                   ${replaced}</p></div>
                 </div>
                 </div>
@@ -845,11 +852,11 @@ frameborder="0" allowfullscreen></iframe>
                     output = `
                     <div class="row">
                     <div class="col-md-12">
-                    <h1 style="color:brown;font-family:BrownStd-Bold">${titulo}</h1>
+                    <h1 style="color:brown;font-family:SOURCE SANS PRO">${titulo}</h1>
                     </div>
                     <div class="col-md-5"><img  src="${producto.data.detalle.foto}" class="img-fluid" alt="Responsive image"/></div>
                     <div class="col-md-7">
-                      <p style="font-size:1.1em;text-align:justify;font-family:BrownStd-Bold">
+                      <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO LIGHT">
                       ${replaced}</p></div>
                     </div>
                     </div>
@@ -893,11 +900,11 @@ frameborder="0" allowfullscreen></iframe>
                     output = `
                     <div class="row">
                     <div class="col-md-12">
-                    <h1 style="color:brown;font-family:BrownStd-Bold">${titulo}</h1>
+                    <h1 style="color:brown;font-family:SOURCE SANS PRO ">${titulo}</h1>
                     </div>
                     <div class="col-md-5"><img  src="${producto.data.detalle.foto}" class="img-fluid" alt="Responsive image"/></div>
                     <div class="col-md-7">
-                      <p style="font-size:1.1em;text-align:justify;font-family:BrownStd-Bold">
+                      <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO LIGHT">
                       ${replaced}</p></div>
                     </div>
                     </div>
@@ -967,11 +974,11 @@ frameborder="0" allowfullscreen></iframe>
                     output = `
                     <div class="row">
                     <div class="col-md-12">
-                    <h1 style="color:brown;font-family:BrownStd-Bold">${titulo}</h1>
+                    <h1 style="color:brown;font-family:SOURCE SANS PRO ">${titulo}</h1>
                     </div>
                     <div class="col-md-5"><img  src="${producto.data.detalle.foto}" class="img-fluid" alt="Responsive image"/></div>
                     <div class="col-md-7">
-                      <p style="font-size:1.1em;text-align:justify;font-family:BrownStd-Bold">
+                      <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO LIGHT">
                       ${replaced}</p></div>
                     </div>
                     </div>
@@ -992,11 +999,11 @@ frameborder="0" allowfullscreen></iframe>
                     output = `
                     <div class="row">
                     <div class="col-md-12">
-                    <h1 style="color:brown;font-family:BrownStd-Bold">${titulo}</h1>
+                    <h1 style="color:brown;font-family:SOURCE SANS PRO ">${titulo}</h1>
                     </div>
                     <div class="col-md-5"><img  src="${producto.data.detalle.foto}" class="img-fluid" alt="Responsive image"/></div>
                     <div class="col-md-7">
-                      <p style="font-size:1.1em;text-align:justify;font-family:BrownStd-Bold">
+                      <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO LIGHT">
                       ${replaced}</p></div>
                     </div>
                     </div>
@@ -1016,11 +1023,11 @@ frameborder="0" allowfullscreen></iframe>
                     output = `
 <div class="row">
 <div class="col-md-12">
-<h1 style="color:brown;font-family:BrownStd-Bold">${titulo}</h1>
+<h1 style="color:brown;font-family:SOURCE SANS PRO ">${titulo}</h1>
 </div>
 <div class="col-md-5"><img  src="${producto.data.detalle.foto}" class="img-fluid" alt="Responsive image"/></div>
 <div class="col-md-7">
-  <p style="font-size:1.1em;text-align:justify;font-family:BrownStd-Bold">
+  <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO LIGHT">
   ${replaced}</p></div>
 </div>
 </div>
@@ -1034,11 +1041,11 @@ frameborder="0" allowfullscreen></iframe>
                     output = `
                     <div class="row">
                     <div class="col-md-12">
-                    <h1 style="color:brown;font-family:BrownStd-Bold">${titulo}</h1>
+                    <h1 style="color:brown;font-family:SOURCE SANS PRO ">${titulo}</h1>
                     </div>
                     <div class="col-md-5"><img  src="${producto.data.detalle.foto}" class="img-fluid" alt="Responsive image"/></div>
                     <div class="col-md-7">
-                      <p style="font-size:1.1em;text-align:justify;font-family:BrownStd-Bold">
+                      <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO LIGHT">
                       ${replaced}</p></div>
                     </div>
                     </div>
@@ -1100,11 +1107,11 @@ frameborder="0" allowfullscreen></iframe>
                     output = `
                     <div class="row">
                     <div class="col-md-12">
-                    <h1 style="color:brown;font-family:BrownStd-Bold">${titulo}</h1>
+                    <h1 style="color:brown;font-family:SOURCE SANS PRO ">${titulo}</h1>
                     </div>
                     <div class="col-md-5"><img  src="${producto.data.detalle.foto}" class="img-fluid" alt="Responsive image"/></div>
                     <div class="col-md-7">
-                      <p style="font-size:1.1em;text-align:justify;font-family:BrownStd-Bold">
+                      <p style="font-size:1.1em;text-align:justify;font-family:SOURCE SANS PRO LIGHT">
                       ${replaced}</p></div>
                     </div>
                     </div>
